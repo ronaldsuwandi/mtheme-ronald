@@ -1,13 +1,37 @@
 <div class="mtheme-footer">
+  {{#unless posts.length}}
+    <div class="btn-container">
+      <a class="btn btn-default " href="{{@blog.url}}">Back to Overview</a>
+    </div>
+  {{/unless}}
+  
+  <p>
+    &copy; <a href="{{@blog.url}}">Author Name</a> {{#if posts}}{{date posts.0.published_at format="YYYY"}}{{/if}} &middot; All Rights Reserved
+    <br>
+    Powered by <a href="https://ghost.org/">Ghost</a> on <a href="https://github.com/ronaldsuwandi/mtheme-ronald">mtheme-ronald</a> theme
+  </p>
+  
   <ul>
     <li>
-      <a href="{{@blog.url}}/rss/">Subscribe</a>
+      <a href="{{@blog.url}}/rss/"><i class="fa fa-fw fa-rss"></i></a>
     </li>
     <li>
-      <a href="//twitter.com/username">Twitter</a>   
+      <a href="//twitter.com/username"><i class="fa fa-fw fa-twitter"></i></a>   
     </li>
     <li>
-      <a href="/">{{@blog.title}}</a>      
+      <a href="//linkedin.com/in/username"><i class="fa fa-fw fa-linkedin"></i></a>
+    </li>
+    <li>
+      <a href="//github.com/username"><i class="fa fa-fw fa-github-alt"></i></a>
+    </li>
+    <li>
+      <a href="mailto:email@email.com"><i class="fa fa-fw fa-envelope"></i></a>
+    </li>
+    <li>
+      <a href="//dribbble.com/username"><i class="fa fa-fw fa-dribbble"></i></a>
+    </li>
+    <li>
+      <a href="//bitbucket.com/username"><i class="fa fa-fw fa-bitbucket"></i></a>
     </li>
   </ul>
 </div>

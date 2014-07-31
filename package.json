@@ -1,10 +1,10 @@
 {
-  "name": "mtheme",
-  "version": "0.1.1-beta",
+  "name": "mtheme-ronald",
+  "version": "0.1.2",
   "description": "Mediumesque theme for Ghost.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/readypress/mtheme.git"
+    "url": "git://github.com/ronaldsuwandi/mtheme-ronald.git"
   },
   "keywords": [
     "Ghost",
@@ -12,5 +12,6 @@
     "Theme"
   ],
   "author": "Jeff Adkins for Readypress",
+  "contributor": "Ronald Suwandi",
   "license": "MIT"
 }
